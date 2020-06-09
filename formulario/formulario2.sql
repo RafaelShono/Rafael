@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Tempo de geração: 29/05/2020 às 16:54
+-- Tempo de geração: 06/06/2020 às 19:26
 -- Versão do servidor: 8.0.17
 -- Versão do PHP: 7.4.6
 
@@ -18,39 +18,39 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `formulario`
+-- Banco de dados: `formulario2`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `usuarios`
+-- Estrutura para tabela `usuarios2`
 --
 
-CREATE TABLE `usuarios` (
-  `cpf` char(11) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+CREATE TABLE `usuarios2` (
   `nome` varchar(220) NOT NULL,
-  `email` varchar(220) NOT NULL,
-  `created` datetime NOT NULL,
-  `modified` datetime DEFAULT NULL
+  `cpf` varchar(11) NOT NULL,
+  `cnpj` varchar(14) NOT NULL,
+  `observacoes` varchar(900) NOT NULL,
+  `datatime` datetime NOT NULL,
+  `datamodif` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Despejando dados para a tabela `usuarios`
+-- Despejando dados para a tabela `usuarios2`
 --
 
-INSERT INTO `usuarios` (`cpf`, `nome`, `email`, `created`, `modified`) VALUES
-('11074190939', 'Renan', 'renan_dosantos@hotmail.com', '2020-05-29 11:38:42', NULL),
-('15561849299', 'rafael', 'jgfjg@hotmail.com', '2020-05-29 11:44:42', NULL);
+INSERT INTO `usuarios2` (`nome`, `cpf`, `cnpj`, `observacoes`, `datatime`, `datamodif`) VALUES
+('RENAN ALVES DOS SANTOS', '15561849299', '', 'mal atendimento ao cliente', '2020-06-06 14:17:52', NULL);
 
 --
 -- Índices de tabelas apagadas
 --
 
 --
--- Índices de tabela `usuarios`
+-- Índices de tabela `usuarios2`
 --
-ALTER TABLE `usuarios`
+ALTER TABLE `usuarios2`
   ADD PRIMARY KEY (`cpf`);
 COMMIT;
 

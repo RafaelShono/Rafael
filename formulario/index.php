@@ -21,10 +21,13 @@ session_start();
       <input type="text" name="nome" placeholder="Digite o nome completo"><br><br>
 
       <label>CPF: </label>
-      <input type="text" name="cpf" placeholder="Digite o seu CPF"><br><br>
+      <input type="char" name="cpf" placeholder="Digite o CPF"><br><br>
 
-      <label>E-mail: </label>
-      <input type="email" name="email" placeholder="Digite o seu melhor email"><br><br>
+      <label>CNPJ: </label>
+      <input type="char" name="cnpj" placeholder="Digite o CNPJ"><br><br>
+
+      <label>Observacoes: </label>
+      <input type="text" name="observacoes" style="height:50px!important" rows="50"></textarea><br><br>
 
       <input type="submit" value="Cadastrar">
       </form>
