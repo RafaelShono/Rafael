@@ -1,0 +1,44 @@
+body{
+
+    background-color:#BEBEBE;
+}
+
+.centerlize{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height:50vh;
+  width:55%;
+  margin-left:20%;
+ 
+ 
+;}
+.for-control{
+    float:left;
+}
+.info-esq{
+
+}
+input[type=text] {
+    background-color:#e4f2e8;
+   height: 35px;
+  
+  }
+label{
+    -webkit-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.1);
+    box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.1);
+    background-color:#81817F;
+    color:white;
+  
+    padding: 0.5%;
+}
+.btn-sucess{
+  float: left;
+  
+}
+.botoes{
+  display: flex;
+  flex-direction: column;
+ 
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="css/cadastro.css"/>
+</head>
+<body>
+    <div id="central">
+    <nav id="formulario">
+        <h2>Informações sobre quem faz a reclamação </h2>
+        <form method="POST" action="enviarDados.php" id="cad">
+            <br>
+            <label>Nome Completo</label>
+            <input  style="width:200px; margin-left:94px; margin-bottom:5px;" type="text" name="nome"><br>
+            <label>Numero do celular ou telefone</label>
+            <input style="width:200px; margin-left:5px;" type="text" name="celular"><br>
+            <label>CPF ou CNPJ</label>
+            <input id="cpfOuCnpj" class="cpfOuCnpj"   style="margin-left:110px; margin-top:12px; width:200px" type="text" name="cpfOuCnpj"><br>
+            <label>Descrição da reclamação: </label><br>
+            <textarea  type ="text" name="obs" rows="4" cols="70"></textarea>
+        <h2>Informações sobre empresa que recebe reclamação</h2>
+        <label>Nome da empresa que recebe reclamação </label>
+        <input  style="margin-left:52px; margin-bottom:12px;width:200px " type="text" name="emp_nome"><br>
+        <label>CNPJ da empresa que receber reclamação</label>
+        <input id="cadastro_pessoa" class="cadastro_pessoa" style=" margin-left:52px; width:200px" type="text" name="cadastro_pessoa">
+        <p><input type="submit" value="submit" name="Eviar" /></p>
+    </form>
+</nav>
+</div>
+<script src="mascara.js">
+
+</script>
+</body>
+</html>
